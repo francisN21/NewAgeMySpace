@@ -1,3 +1,23 @@
+* {
+    
+    font-family: 'Source Code Pro', monospace;
+    /* background-color: grey;  */
+    /* can be turned on so it defaults to grey if the image doesn't load */
+    text-shadow: honeydew;
+    /* color: whitesmoke; */
+}
+
+
+.bd-navbar {
+    background-color: lightskyblue;
+}
+.navbar-nav{
+    position: relative;
+    margin-left: 70% !important;
+}
+
+
+
 .footer {
     position: absolute;
     bottom: 0;
