@@ -1,12 +1,14 @@
 * {
-
     font-family: 'Source Code Pro', monospace;
-        
+    
 }
 body{
-    background-color: lightskyblue; 
+    background-color: lightskyblue;
+    background-attachment: fixed;
+    background-image: url("https://wallpaperaccess.com/full/449903.jpg");    
 }
 
+/* navbar settings here */
 .bd-navbar {
     background-color:  rgb(103, 182, 231);
 }
@@ -30,10 +32,11 @@ div {
     border-radius: 10px;  
 
 }
+
 h1{
     margin-top: 10px;
 }
-
+/* hr for border separator */
 hr { display: block; 
     margin-before: 0.5em; 
     margin-after: 0.5em; 
@@ -44,12 +47,10 @@ hr { display: block;
     border-width: 2px;
 }
 
+/* margin for the description on index */
 figure{
     margin-top: 10px;
-
 }
-
-
 
 .footer {
     position: absolute;
