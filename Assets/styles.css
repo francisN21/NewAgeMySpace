@@ -29,7 +29,8 @@ div {
 /* c2 determins the values for the rows and columns  */
 .c2{
     background-color: white;
-    border-radius: 10px;  
+    border-radius: 10px;
+    margin-bottom: 100px;  
 }
 .c3{
     margin-bottom: 20px;
@@ -51,11 +52,12 @@ hr { display: block;
 
 /* margin for the description on index */
 figure{
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 60px;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     bottom: 0;
     margin-top: auto;
