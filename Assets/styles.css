@@ -1,19 +1,41 @@
 * {
+
+    font-family: 'Source Code Pro', monospace;    
+}
+body{
+    background-color: lightskyblue; 
+}
+div {
+    word-wrap: break-word;
     
-    font-family: 'Source Code Pro', monospace;
-    /* background-color: grey;  */
-    /* can be turned on so it defaults to grey if the image doesn't load */
-    text-shadow: honeydew;
-    /* color: whitesmoke; */
+}
+
+.c1{
+    margin-top: 45px;
+    background-color: rgb(163, 215, 248);
+    
+}
+
+hr { display: block; 
+    margin-before: 0.5em; 
+    margin-after: 0.5em; 
+    margin-start: auto; 
+    margin-end: auto; 
+    overflow: hidden; 
+    border-style: inset;
+    border-width: 2px;
 }
 
 
 .bd-navbar {
-    background-color: lightskyblue;
+    background-color:  rgb(103, 182, 231);
 }
 .navbar-nav{
     position: relative;
     margin-left: 70% !important;
+}
+main{
+
 }
 
 
@@ -22,8 +44,9 @@
     position: absolute;
     text-align: center;
     bottom: 0;
+    margin-top: auto;
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background-color: lightskyblue;
+    background-color:  rgb(103, 182, 231);
 }
