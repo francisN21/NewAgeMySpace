@@ -2,8 +2,6 @@ My First Portfolio Project
 
 This is a bootsrap design with responsive functions to the site!
 
-Welcome to my site: make sure to key in your name to get your warm greetings!
-
 Created this site following the guidelines below:
 
 * Create the following files files: `index.html`, `portfolio.html` and `contact.html`.
