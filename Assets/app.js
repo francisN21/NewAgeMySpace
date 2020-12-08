@@ -3,18 +3,21 @@ let r1d1EL = document.querySelector(".r1d1");
 let r1d2EL = document.querySelector(".r1d2");
 let r1d3EL = document.querySelector(".r1d3");
 let r1d4EL = document.querySelector(".r1d4");
+let r1d5EL = document.querySelector(".r1d5")
 
 let repo2EL = document.querySelector(".repo2");
 let r2dEL = document.querySelector(".r2d1");
 let r2d2EL = document.querySelector(".r2d2");
 let r2d3EL = document.querySelector(".r2d3");
 let r2d4EL = document.querySelector(".r2d4");
+let r2d5EL = document.querySelector(".r2d5")
 
 let repo3EL = document.querySelector(".repo3");
 let r3dEL = document.querySelector(".r3d1");
 let r3d2EL = document.querySelector(".r3d2");
 let r3d3EL = document.querySelector(".r3d3");
 let r3d4EL = document.querySelector(".r3d4");
+let r3d5EL = document.querySelector(".r3d5")
 
 
 function getMyRepo(){
@@ -39,6 +42,8 @@ function getMyRepo(){
             r1d2EL.innerHTML = `Description: ${data.descriptionR1}`;
             r1d3EL.innerHTML = `Open Issue: ${data.issueR1}`;
             r1d4EL.innerHTML = `Language: ${data.langR1}`;
+            r1d5EL.innerHTML = `<img src="./Assets/Files/WeatheringWithYou.PNG" alt="weatherapp" class="img-thumbnail" height="250" width="350">`;
+
 
             // r1 for repo 2
             data.nameR2 = data[8].full_name;
@@ -47,10 +52,12 @@ function getMyRepo(){
             data.issueR2 = data[8].open_issues;
             data.langR2 = data[8].language;
 
+
             repo2EL.innerHTML = "<a href='" + data.htmlR2 + "'>" + data.nameR2 + "</a>";
             r2d2EL.innerHTML = `Description: ${data.descriptionR2}`;
             r2d3EL.innerHTML = `Open Issue: ${data.issueR2}`;
             r2d4EL.innerHTML = `Language: ${data.langR2}`;
+            r2d5EL.innerHTML = `<img src="./Assets/Files/PWDGen.PNG" alt="passwordapp" class="img-thumbnail" height="350" width="850">`;
 
             // r1 for repo 2
             data.nameR3 = data[4].full_name;
@@ -63,6 +70,7 @@ function getMyRepo(){
             r3d2EL.innerHTML = `Description: ${data.descriptionR3}`;
             r3d3EL.innerHTML = `Open Issue: ${data.issueR3}`;
             r3d4EL.innerHTML = `Language: ${data.langR3}`;
+            r3d5EL.innerHTML = `<img src="./Assets/Files/NewAgeMySpace.PNG" alt="portfolio" class="img-thumbnail" height="350" width="350">`;
       })
       .then(()=>{
 
