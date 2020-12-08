@@ -20,4 +20,4 @@ Javascript for API fetch for my github repository featuring 3 of my best creatio
 ![](Assets/Files/NewAgeMySpace.PNG)
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
