@@ -5,6 +5,8 @@ This contains my info and resume for employers to take.
 
 https://francisn21.github.io/NewAgeMySpace/
 
+License under [MIT License](License)
+
 
 ## Technology
 ```
