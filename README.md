@@ -1,32 +1,20 @@
-My First Portfolio Project
+# PortfolioSite
 
-This is a bootsrap design with responsive functions to the site!
+This is my main website for featuring my greatest github repositories created for UCB bootcamp.
+This contains my info and resume for employers to take.
 
-I would appreciate it if you read my about me! Hopefully we can connect!
+https://francisn21.github.io/NewAgeMySpace/
 
-Created this site following the guidelines below:
 
-* Create the following files files: `index.html`, `portfolio.html` and `contact.html`.
+## Technology
+```
+HTML and CSS
+Javascript for API fetch for my github repository featuring 3 of my best creation.
 
-* Using Bootstrap, develop your portfolio site with the following items:
+```
 
-   * A navbar
+### Screenshot
 
-   * A responsive layout
-
-   * Responsive images
-
-* The Bootstrap portfolio should minimize the use of media queries.
-
-* Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
-
-### Hints
-
-* Use Bootstrap's grid system (containers, rows, and columns).
-
-* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
-
-* Use an HTML validation service to ensure that each page has valid HTML.
 
 
 
