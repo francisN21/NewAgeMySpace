@@ -19,7 +19,10 @@ let r3d3EL = document.querySelector(".r3d3");
 let r3d4EL = document.querySelector(".r3d4");
 let r3d5EL = document.querySelector(".r3d5")
 
+// placeholder
+let repo = {};
 
+// for my repo
 function getMyRepo(){
     let apiUrl = 'https://api.github.com/users/francisN21/repos';
   
@@ -32,49 +35,50 @@ function getMyRepo(){
       .then( (data) => {
             console.log(data);
             // r1 for repo 1
-            data.nameR1 = data[10].full_name;
-            data.htmlR1 = data[10].html_url;
-            data.descriptionR1 = data[10].description;
-            data.issueR1 = data[10].open_issues;
-            data.langR1 = data[10].language;
-
-            repo1EL.innerHTML = "<a href='" + data.htmlR1 + "'>" + data.nameR1 + "</a>";
-            r1d2EL.innerHTML = `Description: ${data.descriptionR1}`;
-            r1d3EL.innerHTML = `Open Issue: ${data.issueR1}`;
-            r1d4EL.innerHTML = `Language: ${data.langR1}`;
-            r1d5EL.innerHTML = `<img src="./Assets/Files/WeatheringWithYou.PNG" alt="weatherapp" class="img-thumbnail" height="250" width="350">`;
-
+            repo.nameR1 = data[10].full_name;
+            repo.htmlR1 = data[10].html_url;
+            repo.descriptionR1 = data[10].description;
+            repo.issueR1 = data[10].open_issues;
+            repo.langR1 = data[10].language;
 
             // r1 for repo 2
-            data.nameR2 = data[8].full_name;
-            data.htmlR2 = data[8].html_url;
-            data.descriptionR2 = data[8].description;
-            data.issueR2 = data[8].open_issues;
-            data.langR2 = data[8].language;
-
-
-            repo2EL.innerHTML = "<a href='" + data.htmlR2 + "'>" + data.nameR2 + "</a>";
-            r2d2EL.innerHTML = `Description: ${data.descriptionR2}`;
-            r2d3EL.innerHTML = `Open Issue: ${data.issueR2}`;
-            r2d4EL.innerHTML = `Language: ${data.langR2}`;
-            r2d5EL.innerHTML = `<img src="./Assets/Files/PWDGen.PNG" alt="passwordapp" class="img-thumbnail" height="350" width="850">`;
+            repo.nameR2 = data[8].full_name;
+            repo.htmlR2 = data[8].html_url;
+            repo.descriptionR2 = data[8].description;
+            repo.issueR2 = data[8].open_issues;
+            repo.langR2 = data[8].language;
 
             // r1 for repo 2
-            data.nameR3 = data[4].full_name;
-            data.htmlR3 = data[4].html_url;
-            data.descriptionR3 = data[4].description;
-            data.issueR3 = data[4].open_issues;
-            data.langR3 = data[4].language;
-
-            repo3EL.innerHTML = "<a href='" + data.htmlR3 + "'>" + data.nameR3 + "</a>";
-            r3d2EL.innerHTML = `Description: ${data.descriptionR3}`;
-            r3d3EL.innerHTML = `Open Issue: ${data.issueR3}`;
-            r3d4EL.innerHTML = `Language: ${data.langR3}`;
-            r3d5EL.innerHTML = `<img src="./Assets/Files/NewAgeMySpace.PNG" alt="portfolio" class="img-thumbnail" height="350" width="350">`;
+            repo.nameR3 = data[4].full_name;
+            repo.htmlR3 = data[4].html_url;
+            repo.descriptionR3 = data[4].description;
+            repo.issueR3 = data[4].open_issues;
+            repo.langR3 = data[4].language;
       })
       .then(()=>{
-
-      })
+        displayRepo();
+      });
   };
 
 getMyRepo();
+
+let displayRepo = () =>{
+  // repo 1
+  repo1EL.innerHTML = "<a href='" + repo.htmlR1 + "'>" + repo.nameR1 + "</a>";
+  r1d2EL.innerHTML = `Description: ${repo.descriptionR1}`;
+  r1d3EL.innerHTML = `Open Issue: ${repo.issueR1}`;
+  r1d4EL.innerHTML = `Language: ${repo.langR1}`;
+  r1d5EL.innerHTML = `<img src="./Assets/Files/WeatheringWithYou.PNG" alt="weatherapp" class="img-thumbnail" height="250" width="350">`;
+  // repo 2
+  repo2EL.innerHTML = "<a href='" + repo.htmlR2 + "'>" + repo.nameR2 + "</a>";
+  r2d2EL.innerHTML = `Description: ${repo.descriptionR2}`;
+  r2d3EL.innerHTML = `Open Issue: ${repo.issueR2}`;
+  r2d4EL.innerHTML = `Language: ${repo.langR2}`;
+  r2d5EL.innerHTML = `<img src="./Assets/Files/PWDGen.PNG" alt="passwordapp" class="img-thumbnail" height="350" width="850">`;
+  // repo 3
+  repo3EL.innerHTML = "<a href='" + repo.htmlR3 + "'>" + repo.nameR3 + "</a>";
+  r3d2EL.innerHTML = `Description: ${repo.descriptionR3}`;
+  r3d3EL.innerHTML = `Open Issue: ${repo.issueR3}`;
+  r3d4EL.innerHTML = `Language: ${repo.langR3}`;
+  r3d5EL.innerHTML = `<img src="./Assets/Files/NewAgeMySpace.PNG" alt="portfolio" class="img-thumbnail" height="350" width="350">`;
+}
