@@ -7,8 +7,8 @@ https://francisn21.github.io/NewAgeMySpace/
 
 License under [MIT License](License)
 
-
 ## Technology
+
 ```
 HTML and CSS
 Javascript for API fetch for my github repository featuring 3 of my best creation.
@@ -18,6 +18,3 @@ Javascript for API fetch for my github repository featuring 3 of my best creatio
 ### Screenshot
 
 ![](Assets/Files/NewAgeMySpace.PNG)
-
-
-
