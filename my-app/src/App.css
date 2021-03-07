@@ -1,11 +1,76 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Source Code Pro", monospace;
+  /* for dark mode I need to have White text */
+  color: White !important;
+}
+body {
+  background-color: #18191a;
+  /* will use this once I know how to add a dark mode toggle to regular mode. */
+  /* background-attachment: fixed; */
+  /* background-image: url("https://wallpaperaccess.com/full/449903.jpg");     */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  height: 100vh;
 }
+
+.overflow {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+ }
+
+
+div {
+  word-wrap: break-word;
+}
+p{
+  word-wrap: break-word;
+}
+/* c1 contains the main column */
+.c1 {
+  margin-top: 45px;
+  transition: translate(50%, 50%);
+}
+/* c2 determins the values for the rows and columns  */
+.c2 {
+  background-color: #242526;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.c3 {
+  background-color: #242526;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+/* own margin set for headers */
+h1 {
+  margin-top: 10px;
+}
+h4 {
+  margin-top: 10px;
+}
+/* hr for border separator */
+hr {
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 2px;
+}
+
+/* margin for the description on index */
+figure {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
