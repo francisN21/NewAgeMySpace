@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "./Main/Francisco Rones_Resume.docx";
 
 const Contact = () => {
   return (
@@ -20,11 +21,7 @@ const Contact = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="./Assets/resume/Francisco Rones_Resume.docx"
-                  download="franciscoronesresume"
-                  alt="resume"
-                >
+                <a href={Resume} download="franciscoronesresume" alt="resume">
                   Resume
                 </a>
               </li>

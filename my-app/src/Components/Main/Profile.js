@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import DisplayImage from "./DP.jpg";
 
 const Profile = () => {
+  const [profile, setProfile] = useState({});
+
+  useEffect(() => {
+    (async () => {
+      let apiUrl = "https://api.github.com/users/francisN21";
+      const user = await fetch(apiUrl)
+        .then((response) => {
+          console.log(response);
+          let data = response.json();
+          return data;
+        })
+        .then((data) => {
+          return data;
+        });
+
+      setProfile(user);
+    })();
+  }, []);
   return (
     <div className="container c1">
       <div className="row">
@@ -12,7 +31,7 @@ const Profile = () => {
           <div className="row">
             <div className="col-md-3">
               <img
-                src="./Assets/images/DP (2).jpg"
+                src={DisplayImage}
                 alt="Display Pic"
                 className="img-thumbnail"
                 height="200"
@@ -20,7 +39,7 @@ const Profile = () => {
               />
             </div>
             {/* <!-- my info --> */}
-            <div className="col-md-8">
+            <div className="col-sm-8">
               <ul>
                 <li>Full Name: Francisco Niño Rones</li>
                 <li>Location: San Pablo, Ca</li>

@@ -19,27 +19,12 @@ const RepoContainer = () => {
       setRepo(repository);
     })();
   }, []);
-  useEffect(() => {
-    (async () => {
-      let apiUrl = "https://api.github.com/users/francisN21";
-      const user = await fetch(apiUrl)
-        .then((response) => {
-          console.log(response);
-          let data = response.json();
-          return data;
-        })
-        .then((data) => {
-          return data;
-        });
 
-      console.log(user);
-    })();
-  }, []);
   return (
     <div className="overflow">
       {repo.map((post, index) => (
-        <div className="container c1" key={index}>
-          <div className=" col-md-12 c2">
+        <div className="container c2" key={index}>
+          <div className=" col-md-12 c1">
             <h4>{post.name}</h4>
             <hr />
 
