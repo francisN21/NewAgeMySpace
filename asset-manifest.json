@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/NewAgeMySpace/static/css/main.2f9c04b0.chunk.css",
+    "main.js": "/NewAgeMySpace/static/js/main.a43cc848.chunk.js",
+    "main.js.map": "/NewAgeMySpace/static/js/main.a43cc848.chunk.js.map",
+    "runtime-main.js": "/NewAgeMySpace/static/js/runtime-main.548e85bb.js",
+    "runtime-main.js.map": "/NewAgeMySpace/static/js/runtime-main.548e85bb.js.map",
+    "static/js/2.b969d87b.chunk.js": "/NewAgeMySpace/static/js/2.b969d87b.chunk.js",
+    "static/js/2.b969d87b.chunk.js.map": "/NewAgeMySpace/static/js/2.b969d87b.chunk.js.map",
+    "index.html": "/NewAgeMySpace/index.html",
+    "static/css/main.2f9c04b0.chunk.css.map": "/NewAgeMySpace/static/css/main.2f9c04b0.chunk.css.map",
+    "static/js/2.b969d87b.chunk.js.LICENSE.txt": "/NewAgeMySpace/static/js/2.b969d87b.chunk.js.LICENSE.txt",
+    "static/media/DP.cea88ad6.jpg": "/NewAgeMySpace/static/media/DP.cea88ad6.jpg",
+    "static/media/Francisco Rones_Resume.980c78fd.docx": "/NewAgeMySpace/static/media/Francisco Rones_Resume.980c78fd.docx"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.548e85bb.js",
+    "static/js/2.b969d87b.chunk.js",
+    "static/css/main.2f9c04b0.chunk.css",
+    "static/js/main.a43cc848.chunk.js"
+  ]
+}
