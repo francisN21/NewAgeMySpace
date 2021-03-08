@@ -3,14 +3,14 @@ import Resume from "./Main/Francisco Rones_Resume.docx";
 
 const Contact = () => {
   return (
-    <div class="container c1">
-      <div class="row">
-        <div class="col-md-12 c2">
-          <div class="page-header">
+    <div className="container c1">
+      <div className="row">
+        <div className="col-md-12 c2">
+          <div className="page-header">
             <h1>Contact</h1>
             <hr />
           </div>
-          <div class="col-md-12">
+          <div className="col-md-12">
             <ul>
               <li>
                 <a

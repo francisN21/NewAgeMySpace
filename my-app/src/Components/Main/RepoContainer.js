@@ -7,7 +7,6 @@ const RepoContainer = () => {
       let apiUrl = "https://api.github.com/users/francisN21/repos";
       const repository = await fetch(apiUrl)
         .then((response) => {
-          console.log(response);
           let data = response.json();
           return data;
         })
@@ -15,7 +14,6 @@ const RepoContainer = () => {
           return data;
         });
 
-      console.log(repository);
       setRepo(repository);
     })();
   }, []);
@@ -28,10 +26,14 @@ const RepoContainer = () => {
             <h4>{post.name}</h4>
             <hr />
 
-            <p>{post.url}</p>
-            <p>{post.description}</p>
+            <p>
+              <a href={post.url} alt="Github" className="link">
+                {post.url}
+              </a>
+            </p>
+            <p>Description: {post.description}</p>
             <p>{post.language}</p>
-            <p>{post.open_issues}</p>
+            <p>Open Issues: {post.open_issues}</p>
           </div>
         </div>
       ))}

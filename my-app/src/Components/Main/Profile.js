@@ -9,14 +9,13 @@ const Profile = () => {
       let apiUrl = "https://api.github.com/users/francisN21";
       const user = await fetch(apiUrl)
         .then((response) => {
-          console.log(response);
           let data = response.json();
           return data;
         })
         .then((data) => {
           return data;
         });
-
+      console.log(user);
       setProfile(user);
     })();
   }, []);
@@ -39,21 +38,33 @@ const Profile = () => {
               />
             </div>
             {/* <!-- my info --> */}
-            <div className="col-sm-8">
+            <div className="col-sm-4">
               <ul>
-                <li>Full Name: Francisco Niño Rones</li>
-                <li>Location: San Pablo, Ca</li>
-                <li>Age : 27</li>
+                <li>Full Name: {profile.name}</li>
+                <li>Location: {profile.location}</li>
+                <li>Age: 27</li>
                 <li>
                   Hobbies:
                   <ul>
-                    <li>Coding</li>
-                    <li>Cars</li>
                     <li>Computer Games</li>
-                    <li>Guitar</li>
+                    <li>Coding</li>
                     <li>PC Builds</li>
+                    <li>Guitar</li>
+                    <li>Cars</li>
                   </ul>
                 </li>
+              </ul>
+            </div>
+            <div className="col-sm-5">
+              <ul>
+                <li>
+                  Github:{" "}
+                  <a href={profile.html_url} alt="Github" className="link">
+                    {profile.login}
+                  </a>
+                </li>
+                <li>Public Repos: {profile.public_repos}</li>
+                <li>Current Employer: {profile.company}</li>
               </ul>
             </div>
             {/* <!-- container for the bottom description     --> */}
@@ -70,8 +81,8 @@ const Profile = () => {
                     have more practice and project under my belt."
                   </p>
                   <p>
-                    "Please check out my featured Repositories down below. I
-                    used API fetch on github to append my repo below. Thank you"
+                    "Please check out my repositories down below. I used API
+                    fetch on github to append my repo below. Thank you"
                   </p>
                 </figure>
               </div>

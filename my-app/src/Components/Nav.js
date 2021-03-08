@@ -14,7 +14,7 @@ const NavB = () => {
             height="30"
             className="d-inline-block align-top"
           />
-          FranciscoRones
+          Francisco Rones
         </Navbar.Brand>
         <Nav className="mr-auto collapse navbar-collapse justify-content-end">
           <Nav.Link href="/home">Home</Nav.Link>
