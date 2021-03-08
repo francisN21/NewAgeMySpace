@@ -15,7 +15,6 @@ const Profile = () => {
         .then((data) => {
           return data;
         });
-      console.log(user);
       setProfile(user);
     })();
   }, []);
